@@ -30,7 +30,7 @@ const UserPlaces = () => {
     const fetchPlaces = async () => {
       try {
         const responseData = await sendRequest(
-          `ec2-3-131-38-184.us-east-2.compute.amazonaws.com/api/api/places/user/${userId}`
+          `https://ec2-3-131-38-184.us-east-2.compute.amazonaws.com/api/api/places/user/${userId}`
         );
         setLoadedPlaces(responseData.places);
       } catch (err) {}
