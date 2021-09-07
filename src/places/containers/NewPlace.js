@@ -37,7 +37,7 @@ const NewPlace = () => {
     event.preventDefault();
     try {
       await sendRequest(
-        "https://ec2-3-131-38-184.us-east-2.compute.amazonaws.com/api/api/places",
+        "ec2-3-131-38-184.us-east-2.compute.amazonaws.com/api/api/places",
         "POST",
         JSON.stringify({
           title: formState.inputs.title.value,

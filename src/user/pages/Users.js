@@ -11,8 +11,9 @@ const Users = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const responseData = await sendRequest("https://ec2-3-131-38-184.us-east-2.compute.amazonaws.com/api/api/users");
-
+        console.log("faq");
+        const responseData = await sendRequest("ec2-3-131-38-184.us-east-2.compute.amazonaws.com/api/api/users");
+        console.log(responseData + " 1");
         setLoadedUsers(responseData.users);
       } catch (err) {
       }
